@@ -173,16 +173,16 @@ a:active {
 }
 
 .about-me {
+    position: relative;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-image: none;
     text-align: center;
     background-color: #FCF6F5FF;
+    color: whitesmoke;
     width: 100%;
     height: 210px;
     overflow: hidden;
 }
-
 
 .about-me ul {
     width: 430px;
@@ -192,7 +192,8 @@ a:active {
     line-height: 28px;
     align-items: center;
     text-align: center;
-    color: black;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .about-me ul::-webkit-scrollbar {
@@ -206,6 +207,24 @@ a:active {
 .about-me ul::-webkit-scrollbar-thumb {
   background-color: white;
   outline: 1px solid grey;
+}
+
+.about-me-content {
+    position: relative;
+    z-index: 2;
+}
+
+.about-me-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://img.freepik.com/premium-photo/wood-table-top-blurred-kitchen-background_327072-7121.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(1px) brightness(50%);
 }
 
 .button-size-1 {
